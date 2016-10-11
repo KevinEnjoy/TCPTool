@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_bg_accent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button2"
+            android:text="管理命令"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/button"
+            />
+
+        <Button
+            android:id="@+id/button1"
+            android:text="清除日志"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/button"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:text="命令"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text"
+            />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/spinner" />
+
+        <Button
+            android:id="@+id/button3"
+            android:text="发送数据"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/button"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1900dp"
+            android:text="ddd"/>
+    </ScrollView>
+
+</LinearLayout>

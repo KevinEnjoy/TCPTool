@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- color 开头为内部调用，外部调用都是控件名字开头 -->
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite50">#80FFFFFF</color>
+    <color name="colorRedBlack">#958888</color>
+    <color name="colorRedGray">#999090</color>
+    <color name="colorRedGray2">#665e5e</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack50">#80000000</color>
+    <color name="colorBlack80">#CC000000</color>
+    <color name="colorBlackTransparent70">#B3424541</color>
+    <color name="colorRed">#eb4141</color>
+    <color name="colorRed2">#e60012</color>
+    <color name="colorGray">#e4e4e4</color>
+    <color name="colorGray2">#f1f2f2</color>
+    <color name="colorGray3">#f5f5f5</color>
+    <color name="colorBlackBule">#363d3d</color>
+    <color name="colorGreen">#22ac38</color>
+
+
+    <color name ="text_gray">@color/colorBlackBule</color>
+    <color name ="text_black">@color/colorPrimary</color>
+
+    <color name ="line_menu">#606464</color>
+    <color name ="text_title_menu">@color/colorGray</color>
+
+    <color name ="text_title">@color/colorWhite</color>
+    <color name ="edit_frame_focus">@color/colorAccent</color>
+    <color name ="edit_frame_normal">#cfcfcf</color>
+    <color name ="edit_content">#454545</color>
+    <color name ="edit_hint">@color/colorRedGray</color>
+    <color name ="edit_bg_gray">@color/colorGray3</color>
+
+    <color name ="btn_bg_primary">@color/colorAccent</color>
+    <color name ="btn_bg_primary_focus">@color/colorPrimaryDark</color>
+    <color name ="btn_text_primary">@color/colorWhite</color>
+
+    <color name ="btn_bg_accent">@color/colorRedBlack</color>
+    <color name ="btn_bg_accent_focus">@color/colorAccent</color>
+    <color name ="btn_text_accent">@color/colorPrimary</color>
+
+    <color name ="btn_bg_black">@color/colorBlackTransparent70</color>
+    <color name ="btn_bg_black_focus">@color/colorAccent</color>
+    <color name ="btn_text_black">@color/colorWhite</color>
+
+    <color name ="toolbar_bg">@color/colorPrimary</color>
+    <color name ="toolbar_bg_transparent">@color/colorTransparent</color>
+
+    <color name="food_meat">@color/colorRed</color>
+
+    <color name="listview_item_default">@color/colorWhite</color>
+    <color name="listview_item_focused">@color/colorAccent</color>
+
+    <color name ="listview_bg_color_gray">#f6f7f7</color>
+    <color name ="listview_text_color">#828080</color>
+    <color name ="listview_divider_color">#eaeaea</color>
+
+    <color name="header_normal">#eaeaea</color>
+    <color name="header_pressed">#bceaeaea</color>
+
+    <color name="list_btn_normal">@color/colorWhite</color>
+    <color name="list_btn_press">#eaeaea</color>
+
+    <color name ="radio_btn_true">@color/colorAccent</color>
+    <color name ="radio_btn_false">@color/colorPrimary</color>
+    <color name ="radio_btn_press">@color/colorPrimaryDark</color>
+    <color name ="radio_btn_text">@color/colorWhite</color>
+    <color name ="radio_btn_group_bg">@color/colorRedGray2</color>
+
+    <color name="gridview_item_bg">@color/colorGray2</color>
+    <color name="gridview_item_message_overdue">#f66060</color>
+    <color name="gridview_item_message_warning">#df60f6</color>
+    <color name="gridview_item_message_normal">#f7c30f</color>
+
+    <color name="food_classify_vegetables">#a1eb41</color>
+    <color name="food_classify_meat">#eb4141</color>
+    <color name="food_classify_dairy">#419deb</color>
+    <color name="food_classify_seafood">#a1eb41</color>
+    <color name="food_classify_burden">#eb4141</color>
+    <color name="food_classify_fruit">#419deb</color>
+    <color name="food_classify_other">#a1eb41</color>
+
+    <color name="food_classify_vegetables_text">#2d801a</color>
+    <color name="food_classify_meat_text">#780f0f</color>
+    <color name="food_classify_dairy_text">#abd8ff</color>
+    <color name="food_classify_seafood_text">#2d801a</color>
+    <color name="food_classify_burden_text">#780f0f</color>
+    <color name="food_classify_fruit_text">#abd8ff</color>
+    <color name="food_classify_other_text">#2d801a</color>
+
+    <color name="food_item_image_border_color">#9a9494</color>
+
+    <color name="dialogplus_bg">@color/colorBlack80</color>
+    <color name="text_modify_food_label_classify">@color/colorRedGray</color>
+    <color name="photo_btn_bg">@color/colorGreen</color>
+    <color name="photo_btn_bg_press">@color/btn_bg_primary_focus</color>
+    <color name="btn_bg_delete">@color/colorRed2</color>
+    <color name="btn_bg_delete_press">@color/btn_bg_primary_focus</color>
+
+    <color name="timeline_modeify_text">@color/colorGreen</color>
+    <color name="timeline_line">@color/colorWhite50</color>
+    <color name="timeline_indicator">@color/colorWhite</color>
+    <color name="btn_selector_white_press">@color/colorGray</color>
+    <color name="btn_selector_white_normal">@color/colorWhite</color>
+
+    <color name="refresh_red">@color/food_classify_vegetables</color>
+    <color name="refresh_blue">@color/food_classify_meat</color>
+    <color name="refresh_yellow">@color/food_classify_dairy</color>
+    <color name="empty_text">@color/colorRedGray</color>
+</resources>
