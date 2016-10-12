@@ -8,10 +8,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -20,7 +25,8 @@ import butterknife.Unbinder;
 import info.hoang8f.android.segmented.SegmentedGroup;
 
 
-public class FragmentTCP extends android.support.v4.app.Fragment implements ViewPager.OnPageChangeListener {
+public class FragmentTCP extends android.support.v4.app.Fragment implements ViewPager.OnPageChangeListener
+,View.OnClickListener{
 
     private final String TAG = getClass().getName();
     private Unbinder unbinder;
@@ -36,6 +42,7 @@ public class FragmentTCP extends android.support.v4.app.Fragment implements View
     SegmentedGroup segmentedGroup;
 
     TextView tv;
+    Spinner spinner;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -116,6 +123,14 @@ public class FragmentTCP extends android.support.v4.app.Fragment implements View
                 case 0:
                     view = context.getLayoutInflater().inflate(R.layout.tcp_send,null);
                     tv = (TextView) view.findViewById(R.id.textView);
+                    spinner = (Spinner)view.findViewById(R.id.spinner);
+                    List<String> allItems = new ArrayList<String>();
+                    for (int i = 0; i < 10; i++) {
+                        allItems.add("Item"+i);
+                    }
+                    ArrayAdapter adapter = new ArrayAdapter<String>(context,android.R.layout.simple_spinner_item, allItems);
+                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    spinner.setAdapter(adapter);
 //                    view.findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
 //                        @Override
 //                        public void onClick(View v) {
