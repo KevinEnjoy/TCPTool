@@ -7,6 +7,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -45,9 +47,19 @@ public class ActBase extends AppCompatActivity {
                 }
             });
         }
+
         setTitleName(title);
     }
 
+    public void showToolbarMenuItem(){
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (toolbar != null) {
+            Menu menu = toolbar.getMenu();
+            if(menu.size()>0){
+                menu.findItem(R.id.action_settings).setVisible(true);
+            }
+        }
+    }
     public void dismissToolbar(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setVisibility(View.GONE);
@@ -61,19 +73,12 @@ public class ActBase extends AppCompatActivity {
 
 
 
-    public void setToolbarBtn(String text, int resource, View.OnClickListener listener){
-        Button toolbar_btn = (Button)findViewById(R.id.toolbar_btn);
-        if(toolbar_btn!=null){
-            toolbar_btn.setVisibility(View.VISIBLE);
-            toolbar_btn.setOnClickListener(listener);
-            if(text!=null){
-                toolbar_btn.setText(text);
-                toolbar_btn.setBackgroundResource(0);
-            }else{
-                toolbar_btn.setBackgroundResource(resource);
-                toolbar_btn.setText("");
-            }
-        }
+    public void setToolbarBtn(View.OnClickListener listener){
+//        Button toolbar_btn = (Button)findViewById(R.id.toolbar_btn);
+//        if(toolbar_btn!=null){
+//            toolbar_btn.setVisibility(View.VISIBLE);
+//            toolbar_btn.setOnClickListener(listener);
+//        }
     }
 
     public void setSystemBarDefault(){

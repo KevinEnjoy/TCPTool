@@ -18,7 +18,7 @@ public class StartActivity extends AppCompatActivity {
             public void run() {
 
                 Intent intent = new Intent(StartActivity.this,ActContainer.class);
-                intent.putExtra("fragment_name",FragmentTCP.class.getName());
+                intent.putExtra("fragment_name",FragmentSearch.class.getName());
                 startActivity(intent);
                 finish();
             }

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TCPTool</string>
+
+    <string name="delete_food_dialog_agree">确认</string>
+    <string name="delete_food_dialog_disagree">取消</string>
+    <string name="win_wait">Waiting...</string>
+
 </resources>

@@ -20,6 +20,7 @@
             style="@style/title_text"
             android:text="状态: " />
         <TextView
+            android:id="@+id/tvStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -41,6 +42,7 @@
             style="@style/title_text"
             android:text="IP: " />
         <TextView
+            android:id="@+id/tvIP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
