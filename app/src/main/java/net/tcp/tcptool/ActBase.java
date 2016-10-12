@@ -7,6 +7,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -54,6 +55,7 @@ public class ActBase extends AppCompatActivity {
     public void showToolbarMenuItem(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
+            toolbar.setNavigationIcon(null);
             Menu menu = toolbar.getMenu();
             if(menu.size()>0){
                 menu.findItem(R.id.action_settings).setVisible(true);
